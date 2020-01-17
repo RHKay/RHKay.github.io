@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap Styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>Rock Paper Scissors JavaScript Game</title>
+</head>
+<body>
+<div class="container">
+	<h1>Rock, Paper, Scissors</h1>
+	<div id="rps-game">
+		<!-- Make Your Move -->
+		<div id="rps-you">
+			<h2>Your Move</h2>
+			<div id="rps-your-move"></div>
+			<select id="rps-you-sel" disabled="">
+				<option value="rock">Rock</option>
+				<option value="paper">Paper</option>
+				<option value="scissors">Scissors</option>
+			</select>
+			<input id="rps-you-go" type="button" value="Go!" disabled="">
+		</div>
+
+		<!-- Computer's Move -->
+		<div id="rps-com">
+			<h2>Computer's Move</h2>
+			<div id="rps-com-move"></div>
+		</div>
+	</div>
+
+	<!-- Scoreboard -->
+	<div id="rps-score">
+		Win - <span id="rps-win">0</span> |
+		Lose - <span id="rps-lose">0</span> |
+		Draw - <span id="rps-draw">0</span>
+	</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

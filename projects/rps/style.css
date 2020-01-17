@@ -1,0 +1,166 @@
+/* ---------- Global ---------- */
+html, body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 2em;
+}
+
+.container h1, #rps-score {
+	color: #56135B;
+}
+
+#rps-you h2, #rps-com h2 {
+	color: #cbcbd5;
+}
+
+/* ---------- Game Wrapper ---------- */
+#rps-game {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+#rps-you, #rps-com {
+	padding: 15px;
+	text-align: center;
+}
+
+/* ---------- Rock/Paper/Scissors Image ---------- */
+#rps-your-move, #rps-com-move {
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+/* image could be added with JS */
+/* red #fbdada, yellow #fef6d5, purple #f6d5ff */
+#rps-game img {
+	width: auto;
+	height: 200px;
+}
+
+/* ---------- Your Move ---------- */
+#rps-you {
+	background: #A36094;
+}
+
+#rps-you-sel, #rps-you-go {
+	box-sizing: border-box;
+	display: block;
+	margin: 0;
+	padding: 10px;
+	border: 0;
+	float: left;
+}
+
+#rps-you-sel { 
+	width: 60%; 
+	margin-right: 2em; 
+}
+
+#rps-you-go { 
+	width: 30%;
+	background: #6F0221;
+	color: #D68E03; 
+}
+#rps-you-go:hover {
+	background: #D68E03;
+	color: #6F0221;
+}
+#rps-you-go:focus {
+	outline: none;
+}
+
+/* ---------- Computer's Move ---------- */
+#rps-com {
+	background: #D68E03;
+}
+
+/* ---------- Scoreboard ---------- */
+#rps-score {
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* ---------- Media Queries ---------- */
+@media (max-width: 991px) {
+	#rps-you-sel {
+		width: 100%;
+		margin-right: 0;
+	}
+	#rps-you-go {
+		width: 100%;
+		margin-top: 1em;
+	}
+}
+
+@media (max-width: 768px) {
+	.container h1 {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 767px) {
+	#rps-you h2, #rps-com h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.container h1 {
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 500px) {
+	#rps-your-move, #rps-com-move, #rps-game img {
+		height: 180px;
+	}
+}
+
+@media (max-width: 466px) {
+	#rps-you h2, #rps-com h2 {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 444px) {
+	#rps-your-move, #rps-com-move, #rps-game img {
+		height: 160px;
+	}
+}
+
+@media (max-width: 406px) {
+	#rps-your-move, #rps-com-move, #rps-game img {
+		height: 150px;
+	}
+}
+
+@media (max-width: 399px) {
+	#rps-you h2, #rps-com h2 {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 386px) {
+	#rps-your-move, #rps-com-move, #rps-game img {
+		height: 130px;
+	}
+}
+
+@media (max-width: 351px) {
+	#rps-you h2, #rps-com h2 {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 349px) {
+	#rps-your-move, #rps-com-move, #rps-game img {
+		height: 110px;
+	}
+}
+
+
+
