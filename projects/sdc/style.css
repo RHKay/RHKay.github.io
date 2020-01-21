@@ -9,6 +9,10 @@ h1 { color: #3e54de !important; }
 
 h4, h5, .btn-hours [type=button], p { color: #4f80e2 !important; }
 
+.btn-hours [type=button] { background: #fff; }
+
+[type=button] { outline: none; }
+
 #ideal, #actual {
 	margin: 20px;
 	padding: 15px 10px;
@@ -41,5 +45,36 @@ h4, h5, .btn-hours [type=button], p { color: #4f80e2 !important; }
 #calculate [type=button]:hover {
 	background: #4f80e2;
 	color: #15cdca;
+}
+
+/* -------- Media Queries ------- */
+@media (max-width: 1200px) {
+	#content { width: 70%; }
+}
+@media (max-width: 768px) {
+	#content { width: 100%; }
+	#calculate [type=button] {
+		font-size: 1em;
+	}
+}
+@media (max-width: 576px) {
+	h1 { font-size: 2rem !important; }
+	h4 { font-size: 1rem !important; }
+	h5 { font-size: 0.9rem !important; }
+
+	.btn-hours [type=button] { font-size: 16px; }
+}
+@media (max-width: 440px) {
+	.btn-hours [type=button] { font-size: 14px; }
+	p { font-size: 0.8rem; }
+}
+@media (max-width: 380px) {
+	.btn-hours [type=button] { font-size: 12px; }
+}
+@media (max-width: 348px) {
+	.btn-hours [type=button] { font-size: 11px; }
+}
+@media (max-width: 332px) {
+	.btn-hours [type=button] { font-size: 10px; }
 }
 
