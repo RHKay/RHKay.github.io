@@ -32,32 +32,32 @@ const userInput = function(el) {
       // targeting the input button for sunday when the user makes a selection for sleep hours on sunday
       document.getElementById("sunday-hours").textContent = el.target.value;
       // changing the background color of the selected input button for sunday
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     //doing the same thing for the rest of the days of the week
     case "monday":
       document.getElementById("monday-hours").textContent = el.target.value;
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     case "tuesday":
       document.getElementById("tuesday-hours").textContent = el.target.value;
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     case "wednesday":
       document.getElementById("wednesday-hours").textContent = el.target.value;
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     case "thursday":
       document.getElementById("thursday-hours").textContent = el.target.value;
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     case "friday":
       document.getElementById("friday-hours").textContent = el.target.value;
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     case "saturday":
       document.getElementById("saturday-hours").textContent = el.target.value;
-      el.target.style.backgroundColor = "#4fe0b6";
+      el.target.style.backgroundColor = "#15cdca";
       break;
     case "calculate":
       // create an empty array of the actual sleep hours the user inputted
