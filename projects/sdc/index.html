@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<title>Sleep Debt Calculator</title>
+</head>
+<body>
+	<div id="content" class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Sleep Debt Calculator</h1>
+				<div id="ideal" class="btn-hours">
+					<h4>What is your ideal amount of sleep per day?</h4>
+						<input id="default-ideal-hours" type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+			
+					<p><span id="ideal-hours">0</span> hours per day |
+					<span id="ideal-hours-week">0</span> hours per week</p>
+				</div>
+				<div id="actual">
+					<h4>What are the actual hours of sleep you get per day?</h4>
+					<h5>Sunday: <span id="sunday-hours" class="hours"></span></h5>
+					<div id="sunday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+
+					<h5>Monday: <span id="monday-hours" class="hours"></span></h5>
+					<div id="monday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+
+					<h5>Tuesday: <span id="tuesday-hours" class="hours"></span></h5>
+					<div id="tuesday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+
+					<h5>Wednesday: <span id="wednesday-hours" class="hours"></span></h5>
+					<div id="wednesday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+
+					<h5>Thursday: <span id="thursday-hours" class="hours"></span></h5>
+					<div id="thursday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+
+					<h5>Friday: <span id="friday-hours" class="hours"></span></h5>
+					<div id="friday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+
+					<h5>Saturday: <span id="saturday-hours" class="hours"></span></h5>
+					<div id="saturday" class="btn-hours">
+						<input type="button" value="0">
+						<input type="button" value="1">
+						<input type="button" value="2">
+						<input type="button" value="3">
+						<input type="button" value="4">
+						<input type="button" value="5">
+						<input type="button" value="6">
+						<input type="button" value="7">
+						<input type="button" value="8">
+					</div>
+				</div> <!-- End actual ID -->
+
+				<div id="calculate">
+					<h5 id="result"></h5>
+					<input id="cal" class="ignore" type="button" value="Calculate">
+				</div>
+
+			</div> <!-- End col-md-12 -->
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="script.js"></script>
+	<!-- Bootstrap Scripts -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

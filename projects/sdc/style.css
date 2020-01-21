@@ -1,0 +1,45 @@
+#content {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	padding-top: 50px;
+	width: 50%;
+}
+
+h1 { color: #3e54de !important; }
+
+h4, h5, .btn-hours [type=button], p { color: #4f80e2 !important; }
+
+#ideal, #actual {
+	margin: 20px;
+	padding: 15px 10px;
+}
+
+#ideal { background: #15cdca; }
+
+#actual { background: #4fe0b6; }
+
+#actual h5 { padding-top: 1em; }
+
+/*.btn-hours [type=button]:visited, .btn-hours [type=button]:focus, .btn-hours [type=button]:active {
+	background: #15cdca !important;
+	outline: none;
+}*/
+
+#default-ideal-hours { background: #4fe0b6; outline: none; }
+
+#result { margin-bottom: 1em; }
+
+#calculate [type=button] {
+	background: #15cdca;
+	color: #4f80e2;
+	padding: 0.7em;
+	border: 1px solid #15cdca;
+	font-size: 1.2em;
+	margin-bottom: 2em;
+}
+
+#calculate [type=button]:hover {
+	background: #4f80e2;
+	color: #15cdca;
+}
+
