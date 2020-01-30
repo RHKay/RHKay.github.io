@@ -50,6 +50,13 @@ h1.main-title {
 	padding: 2em;
 	border-radius: 10px;
 	background-color: rgba(148, 154, 250, 0.5);
+	overflow-wrap: break-word;
+	word-break: break-all;
+	word-break: break-word;
+	-ms-word-break: break-all;
+	hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
 	height: calc(70vh * (9/16));
 	width: 100%;
 	max-height: calc(40em * (9/16));
