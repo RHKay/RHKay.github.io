@@ -3075,6 +3075,16 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 12pt;
 			}
+		
+		/* Portfolio Image Fix */
+			.feature .image img {
+				position: static;
+			}
+		
+			.feature.left .image img,
+			.feature.right .image img {
+				width: 100%;
+			}
 
 	}
 
